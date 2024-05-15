@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="image">
+      <img src="./images/gold.png" alt="" >
+    </div>
+    <form action="/" method="get" class="form">
+      <div class="heading">CREATE ACCOUNT</div>
+      <div class="layer1">
+        <label for="firstName">FIRST NAME</label>
+        <input type="text" id="firstName"  minlength="3" maxlength="32" required >
+      </div>
+      <div class="layer2">
+        <label for="lastName">LAST NAME</label>
+        <input type="text" id="lastName"  minlength="3" maxlength="32" required >
+      </div>
+      <div class="layer3">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" required autocomplete="email">
+      </div>
+      <div class="layer4">
+        <label for="phone">PHONE NUMBER</label>
+        <input type="tel" id="phone" required autocomplete="tel" >
+      </div>
+      <div class="layer5">
+        <label for="pass1">PASSWORD</label>
+        <input type="password" id="pass1" required>
+      </div>
+      <div class="layer6">
+        <label for="pass2">CONFIRM PASSWORD</label>
+        <input type="password" id="pass2" required>
+      </div>
+      <div>
+        <input type="submit" value="SIGN UP" class="btn">
+      </div>
+      <a href="https://github.com/notsanta20" target="_blank" class="link">Already have an account? Log in</a>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

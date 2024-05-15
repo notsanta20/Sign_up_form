@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans serif;
+  }
+  
+  body{
+    background-color: rgb(66, 66, 66);
+    color: rgb(212, 212, 212);
+  }
+  
+  .container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image{
+    height: 30vh;
+    width: 100vw;
+  }
+  
+  .image img{
+    box-shadow: 0px 10px 10px rgb(27, 27, 27);
+    border-radius: 0px 0px 35px 35px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .heading{
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .form div{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+  }
+  
+  
+  label{
+    font-size: .9rem;
+    font-weight: 600;
+    padding: 5px;
+    display: inline;
+  }
+  
+  input{
+    border: .5px solid rgb(27, 27, 27);
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 10px;
+    background-color: rgb(90, 88, 88);
+    color: rgb(212, 212, 212);
+    font-size: 1rem;
+  }
+  
+  input[type ="submit"]{
+    font-size: 1rem;
+    font-weight: 700;
+    height: 40px;
+    margin-top: 10px;
+  }
+  
+  input[type ="submit"]:hover{
+    background-color: rgb(70, 70, 70);
+  }
+  
+  a{
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  input[type = "password"]:invalid{
+    border: .5px solid rgb(189, 61, 61);
+    outline: 1px rgb(189, 61, 61);
+  }
+  
+  .error{
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  
+  @media only screen and (min-width: 450px){
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container{
+      height: 700px;
+      width: 1200px;
+      background-color: rgb(27, 27, 27);
+      border-radius: 35px;
+  
+      display: flex;
+      flex-direction: row;
+      box-shadow: 5px 5px 20px rgb(27, 27, 27);
+   
+      
+    }
+  
+    .image{
+      height: 100%;
+      width: 35%;
+     }
+  
+    .image img{
+      box-shadow: 10px 0px 20px rgb(27, 27, 27);
+      border-radius: 35px;
+    }
+  
+    .form{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+  
+    }
+   
+    .form div{
+        width: 50%;
+    }
+      
+  }
