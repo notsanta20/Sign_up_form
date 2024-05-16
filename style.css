@@ -1,143 +1,249 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Inter, sans serif;
-  }
-  
-  body{
-    background-color: rgb(66, 66, 66);
-    color: rgb(212, 212, 212);
-  }
-  
-  .container{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(27, 27, 27);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans serif;
+}
+
+body{
+  background-color: rgb(66, 66, 66);
+  color: rgb(212, 212, 212);
+}
+
+.container{
+  height: auto;
+  width: 100vw;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+}
+
+.image{
+  height: 30vh;
+  width: 100vw;
+}
+
+.image img{
+  box-shadow: 0px 10px 10px rgb(27, 27, 27);
+  border-radius: 0px 0px 35px 35px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heading{
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 20px;
+}
+
+.form div{
     display: flex;
     flex-direction: column;
-  }
+    width: 80%;
+}
+
+.form div>.error{
+  width: auto;
+}
+
+label{
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 5px;
+  display: inline;
+}
+
+input{
+  border: 1px solid rgb(27, 27, 27);
+  border-radius: 10px;
+  height: 35px;
+  padding-left: 10px;
+  background-color: rgb(90, 88, 88);
+  color: rgb(212, 212, 212);
+  font-size: 1rem;
+}
+
+input:focus{
+  outline: 0;
+}
+
+input[type ="submit"]{
+  font-size: 1rem;
+  font-weight: 700;
+  height: 40px;
+  margin-top: 10px;
+}
+
+input[type ="submit"]:hover{
+  background-color: rgb(70, 70, 70);
+}
+
+a{
+  color: rgb(212, 212, 212);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 20px;
+}
+
+.errorRed{
+  border: 1px solid rgb(189, 61, 61);
+}
+
+.errorGreen{
+  border: 1px solid rgb(87, 189, 61);
+}
+
+.error{
+  padding: 10px;
+  font-size: .8rem;
+  font-weight: 500;
+  color: rgb(189, 61, 61);
+  visibility: hidden;
+}
+
+  /* Thankyou Page */
+
+.mainT{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 35px;
   
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.message{
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  }
+
+.links a{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.links a:hover{
+  color: rgb(148, 148, 148);
+}
+
+@media only screen and (min-width: 450px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .main{
+    height: 1100px;
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .container{
+    height: 900px;
+    width: 1400px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 20px rgb(27, 27, 27);
+  }
+
   .image{
-    height: 30vh;
-    width: 100vw;
-  }
-  
-  .image img{
-    box-shadow: 0px 10px 10px rgb(27, 27, 27);
-    border-radius: 0px 0px 35px 35px;
     height: 100%;
-    width: 100%;
-    object-fit: cover;
+    width: 35%;
+   }
+
+  .image img{
+    box-shadow: 10px 0px 20px rgb(27, 27, 27);
+    border-radius: 35px;
   }
-  
+
   .form{
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
   }
-  
-  .heading{
-    font-size: 2rem;
-    font-weight: 800;
-    text-align: center;
-  }
-  
+ 
   .form div{
-      display: flex;
-      flex-direction: column;
-      width: 80%;
+      width: 50%;
   }
-  
-  
-  label{
-    font-size: .9rem;
-    font-weight: 600;
-    padding: 5px;
-    display: inline;
+
+  .form div>.error{
+    width: auto;
   }
-  
-  input{
-    border: .5px solid rgb(27, 27, 27);
-    border-radius: 10px;
-    height: 35px;
-    padding-left: 10px;
-    background-color: rgb(90, 88, 88);
-    color: rgb(212, 212, 212);
-    font-size: 1rem;
+
+  /* Thankyou Page */
+
+  .mainT{
+    height: 900px;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 35px;
+    
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
-  
-  input[type ="submit"]{
-    font-size: 1rem;
-    font-weight: 700;
-    height: 40px;
-    margin-top: 10px;
+
+  .message{
+    font-size: 5rem;
+    font-weight: 900;
   }
-  
-  input[type ="submit"]:hover{
-    background-color: rgb(70, 70, 70);
+
+  .links{
+    display: flex;
+    justify-content: center;
+   }
+
+  .links a{
+    font-size: 2rem;
   }
-  
-  a{
-    color: rgb(212, 212, 212);
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  input[type = "password"]:invalid{
-    border: .5px solid rgb(189, 61, 61);
-    outline: 1px rgb(189, 61, 61);
-  }
-  
-  .error{
-    padding: 10px;
-    font-size: 1rem;
-  }
-  
-  
-  @media only screen and (min-width: 450px){
-    body{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container{
-      height: 700px;
-      width: 1200px;
-      background-color: rgb(27, 27, 27);
-      border-radius: 35px;
-  
-      display: flex;
-      flex-direction: row;
-      box-shadow: 5px 5px 20px rgb(27, 27, 27);
    
-      
-    }
-  
-    .image{
-      height: 100%;
-      width: 35%;
-     }
-  
-    .image img{
-      box-shadow: 10px 0px 20px rgb(27, 27, 27);
-      border-radius: 35px;
-    }
-  
-    .form{
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-  
-    }
-   
-    .form div{
-        width: 50%;
-    }
-      
-  }
+}
