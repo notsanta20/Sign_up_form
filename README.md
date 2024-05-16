@@ -12,7 +12,7 @@
 ### Preview
 
 <div align="center">
- <img src="./assets/preview.jpg">
+ <img src="./images/preview.jpg">
 </div>
 
 
